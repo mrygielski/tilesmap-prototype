@@ -1,0 +1,48 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>pozycja</title>
+<style>
+#main {
+	border:#333;
+	border-width:2px;
+	border-style:solid;
+}
+#main2 {
+	border:#333;
+	border-width:2px;
+	border-style:solid;
+}
+</style>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="init();">
+
+	<div style='position: absolute; margin-left: 170px'>
+		<a href="#" onclick="objectTypeSelect=0">ziemia</a>;
+		<a href="#" onclick="objectTypeSelect=1">obiekty</a>;
+		<a href="#" onclick="no=-1;kasowanie=0">select item</a>;
+		<a href="#" onclick="no=0;kasowanie=0">wall0</a>;
+		<a href="#" onclick="no=1;kasowanie=0">wall1</a>;
+		<a href="#" onclick="no=2;kasowanie=0">wall2</a>;
+		<a href="#" onclick="no=3;kasowanie=0">wall3</a>;
+		<a href="#" onclick="no=4;kasowanie=0">wall4</a>;
+		<a href="#" onclick="kasowanie=1">kasowanie</a>;
+	</div>
+
+	<div style='position:absolute'>
+		<input type='hidden' id='XX'><div style='clear:both'></div>
+		<input type='hidden' id='YY'><div style='clear:both'></div>
+	</div>
+
+	<div style='position:absolute;margin-top:10px'>czy kolizja: <span id='info'>-</span></div>
+	<div style='position:absolute;margin-top:25px'>czy wolne: <span id='info2'>-</span></div>
+	<div style='position:absolute;margin-top:40px'>numer przedmiotu: <span id='info3'>-</span></div>
+	<div style='position:absolute;margin-top:55px'>czy dotknal: <span id='info4'>-</span></div>
+	<div style='position:absolute;margin-top:85px'>typ obiektu: <span id='IDselectObjectType'>-</span></div>
+	<div style='position:absolute;margin-top:125px'>typ XXX: <span id='info0'>-</span></div>
+
+	<canvas id="main2" width="200" height="200" style="position: relative; margin-top:700px; margin-left:100px;"></canvas>
+	<canvas id="main" width="722" height="600" style="margin-top:100px; margin-left:100px;"></canvas>
+
+	</body>
+
+</html>
